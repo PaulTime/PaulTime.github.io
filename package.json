@@ -1,0 +1,26 @@
+{
+  "name": "test_job",
+  "version": "0.0.1",
+  "description": "test task for work",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "author": "Paul Timofieiev",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="src/fonts/fonts.css">
+	<link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+	
+	<header class="page-header">
+		<h1 class="page-header__top"><a href="#">Hello world</a></h1>
+		<p class="page-header__about"> 
+			This page will help you to create a 
+			"TODO" list and handle it by yourself
+		</p>
+	</header>
+	
+	<main class="page-main">
+		<h1 class="page-main__header">Just Do It</h1>
+	
+		<div class="page-main__top-wrapper">	
+			<form class="page-main__top-wrapper__form" method="POST" name="addTodoForm">
+				<div>Task name:</div>
+				<input type="text" class="page-main__top-wrapper__form__task-name" name="taskName"/>
+				<div>Description:</div>
+				<input type="textarea" class="page-main__top-wrapper__form__description" name="description"/>
+				<input type='button' class="page-main__top-wrapper__form__submit" value="Add new task" />
+			</form>
+			<form method="POST" class="page-main__top-wrapper__aside-form" name='sortForm'>
+				<div class="page-main__top-wrapper__aside-form__top">Sort by:</div>
+				<input type="radio" 
+							 name="sort" 
+							 value="task-name" checked
+							 class="page-main__top-wrapper__aside-form__sort-name"
+				/> task name<br />
+  			<input type="radio" 
+  						 name="sort" 
+  						 value="task-number"
+  						 class="page-main__top-wrapper__aside-form__sort-number"
+  			/> task number<br />
+  			<input type='button' class="page-main__top-wrapper__aside-form__submit" value='Sort' />
+			</form>
+			
+		</div>
+		<section class="page-main__root-wrapper">
+			<h1 class="page-main__root-wrapper__header">Your TODO list</h1>
+			<!--TODO List -->
+			<div class="page-main__root-wrapper__target"></div>
+		</section>
+	</main>
+
+	<div class="page-anchor">Up</div>
+
+
+
+	<script type="text/javascript" src="dist/bundle.js" charset="utf-8"></script>
+</body>
+</html>

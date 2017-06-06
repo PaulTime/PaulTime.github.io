@@ -1,0 +1,56 @@
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+*
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	margin: 0 auto
+	line-height: 1
+	font-family: "Homoarakhn"
+	font-size: 14px
+	overflow-x: hidden
+	opacity: 1
+	background-color: $bodyBGcol
+a
+	text-decoration: none
+	cursor: pointer
+	color: $black
+
+button
+	padding: 0px
+	border: 0px	
+select
+	cursor: pointer
+
+.accent-text
+	&:hover
+		color: inherit
+		border-bottom: 2px solid $accent
+		text-decoration: none
+	
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto

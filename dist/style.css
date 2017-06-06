@@ -1,0 +1,198 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  line-height: 1;
+  font-family: "Homoarakhn";
+  font-size: 14px;
+  overflow-x: hidden;
+  opacity: 1;
+  background-color: deepskyblue; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black; }
+
+button {
+  padding: 0px;
+  border: 0px; }
+
+select {
+  cursor: pointer; }
+
+.accent-text:hover {
+  color: inherit;
+  border-bottom: 2px solid #30AE63;
+  text-decoration: none; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.page-header {
+  margin: 20px auto 40px;
+  padding: 20px 20px;
+  max-width: 650px;
+  border-radius: 15px;
+  border: 2px dashed black; }
+  .page-header__top {
+    text-align: center;
+    margin: 0px 0px 10px 0px; }
+  .page-header__about {
+    max-width: 430px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5; }
+
+.page-main {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  padding: 15px 20px 0px 20px;
+  border-radius: 15px;
+  border: 2px dashed black; }
+  .page-main__header {
+    text-align: center;
+    margin: 0; }
+  .page-main__top-wrapper {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .page-main__top-wrapper__form {
+      max-width: 200px;
+      display: flex;
+      flex-wrap: wrap; }
+      .page-main__top-wrapper__form__task-name {
+        margin-bottom: 4px;
+        width: 100%; }
+      .page-main__top-wrapper__form__description {
+        margin-bottom: 12px;
+        width: 100%; }
+      .page-main__top-wrapper__form__submit {
+        padding: 5px 10px;
+        border-radius: 4px;
+        align-self: flex-end;
+        cursor: pointer;
+        width: 100%; }
+    .page-main__top-wrapper__aside-form {
+      max-width: 200px;
+      margin-right: 20px; }
+      .page-main__top-wrapper__aside-form__top {
+        margin-bottom: 5px; }
+      .page-main__top-wrapper__aside-form__sort-name {
+        margin-bottom: 15px; }
+      .page-main__top-wrapper__aside-form__sort-number {
+        margin-bottom: 20px; }
+      .page-main__top-wrapper__aside-form__submit {
+        width: 100%;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer; }
+  .page-main__root-wrapper {
+    max-width: 650px;
+    padding: 0px 20px;
+    border-top: 2px solid black; }
+    .page-main__root-wrapper__header {
+      text-align: center; }
+    .page-main__root-wrapper__target {
+      padding: 10px 0; }
+
+.page-anchor {
+  position: fixed;
+  right: -70px;
+  bottom: 30px;
+  background-color: white;
+  opacity: 0.5;
+  color: deepskyblue;
+  border-radius: 4px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: right 0.2s linear; }
+  .page-anchor:hover {
+    color: black; }
+
+.target__task {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black; }
+  .target__task h6 {
+    margin: 0px 0px 10px;
+    font-size: 14px; }
+  .target__task p {
+    margin: 0px 0px 10px; }
+  .target__task__remove {
+    border-radius: 4px;
+    padding: 2px 10px;
+    cursor: pointer; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 889px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 700px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
+
+/*# sourceMappingURL=style.css.map*/
