@@ -49,9 +49,6 @@
 
   &__contact {
     font-size: 1.5rem;
-
-    &:not(:last-child) {
-      margin-bottom: .4rem;
-    }
+    margin: .2rem 0;
   }
 }
