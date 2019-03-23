@@ -1,0 +1,57 @@
+.container {
+  max-width: 56vw;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bbbbbb;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  &__avatar {
+    width: 86px;
+    border-radius: 50%;
+    height: 86px;
+    object-fit: cover;
+  }
+
+  &__content-info {
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__full-name {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  &__job-title {
+    font-size: 1.2rem;
+    margin-top: .8rem;
+    font-weight: 400;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  &__contact {
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: .4rem;
+    }
+  }
+}
