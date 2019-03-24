@@ -1,5 +1,5 @@
 .container {
-  max-width: 56vw;
+  max-width: 66vw;
   width: 100%;
 }
 
@@ -48,7 +48,41 @@
   }
 
   &__contact {
-    font-size: 1.5rem;
     margin: .2rem 0;
+    font-size: 1.5rem;
+    color: #555;
+  }
+}
+
+.story {
+  display: flex;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  padding-left: .2rem;
+  border-bottom: .1rem solid #bbbbbb;
+
+  &__title {
+    font-size: 1.6rem;
+    text-align: left;
+    min-width: 10rem;
+  }
+
+  &__definition strong {
+    margin-bottom: .4rem;
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+
+  &__definition small {
+    margin-bottom: .7rem;
+    display: inline-block;
+    padding-top: .3rem;
+    font-size: 1rem;
+    color: #bbb;
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
