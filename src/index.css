@@ -1,6 +1,14 @@
 .container {
   max-width: 66vw;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 86vw;
+  }
+
+  @media screen and (max-width: 425px) {
+    max-width: 92vw;
+  }
 }
 
 .header {
@@ -13,7 +21,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
   }
 
   &__avatar {
@@ -24,9 +32,8 @@
   }
 
   &__content-info {
-    margin-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin: 0 1rem;
+    padding: 1rem 0;
   }
 
   &__full-name {
@@ -55,28 +62,37 @@
 }
 
 .story {
+  padding: 2.4rem 0 2.4rem .2rem;
   display: flex;
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-  padding-left: .2rem;
   border-bottom: .1rem solid #bbbbbb;
+
+  @media screen and (max-width: 768px) {
+    padding: 1.4rem 0;
+    flex-direction: column;
+  }
 
   &__title {
     font-size: 1.6rem;
     text-align: left;
     min-width: 10rem;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: .8rem;
+      text-align: center;
+    }
   }
 
   &__definition strong {
     margin-bottom: .4rem;
     display: inline-block;
     font-size: 1.2rem;
+    line-height: 1.2;
   }
 
   &__definition small {
     margin-bottom: .7rem;
-    display: inline-block;
     padding-top: .3rem;
+    display: inline-block;
     font-size: 1rem;
     color: #bbb;
   }
@@ -84,5 +100,18 @@
   &__description {
     font-size: 1rem;
     line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  &__project-link {
+    cursor: pointer;
+    color: #08c;
+  }
+
+  &__project-link:active,
+  &__project-link:hover,
+  &__project-link:focus,
+  &__project-link {
+    text-decoration: none;
   }
 }
