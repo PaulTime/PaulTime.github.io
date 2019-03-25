@@ -1,0 +1,117 @@
+.container {
+  max-width: 66vw;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 86vw;
+  }
+
+  @media screen and (max-width: 425px) {
+    max-width: 92vw;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bbbbbb;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 86px;
+    border-radius: 50%;
+    height: 86px;
+    object-fit: cover;
+  }
+
+  &__content-info {
+    margin: 0 1rem;
+    padding: 1rem 0;
+  }
+
+  &__full-name {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  &__job-title {
+    font-size: 1.2rem;
+    margin-top: .8rem;
+    font-weight: 400;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  &__contact {
+    margin: .2rem 0;
+    font-size: 1.5rem;
+    color: #555;
+  }
+}
+
+.story {
+  padding: 2.4rem 0 2.4rem .2rem;
+  display: flex;
+  border-bottom: .1rem solid #bbbbbb;
+
+  @media screen and (max-width: 768px) {
+    padding: 1.4rem 0;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    text-align: left;
+    min-width: 10rem;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: .8rem;
+      text-align: center;
+    }
+  }
+
+  &__definition strong {
+    margin-bottom: .4rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  &__definition small {
+    margin-bottom: .7rem;
+    padding-top: .3rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: #bbb;
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  &__project-link {
+    cursor: pointer;
+    color: #08c;
+  }
+
+  &__project-link:active,
+  &__project-link:hover,
+  &__project-link:focus,
+  &__project-link {
+    text-decoration: none;
+  }
+}
