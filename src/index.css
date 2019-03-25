@@ -15,8 +15,11 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #bbbbbb;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+  padding: 2.2rem 0;
+
+  @media screen and (max-width: 425px) {
+    padding: 1rem 0;
+  }
 
   &__content {
     display: flex;
@@ -34,6 +37,11 @@
   &__content-info {
     margin: 0 1rem;
     padding: 1rem 0;
+
+    @media screen and (max-width: 425px) {
+      margin: 0 .5rem;
+      padding: .5rem 0;
+    }
   }
 
   &__full-name {
@@ -50,25 +58,47 @@
   &__navigation {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-end;
     justify-content: center;
   }
 
   &__contact {
     margin: .2rem 0;
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     color: #555;
+    text-decoration: none;
+
+    &_mail span {
+      font-size: 1rem;
+      padding-right: .4rem;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 }
 
 .story {
   padding: 2.4rem 0 2.4rem .2rem;
   display: flex;
-  border-bottom: .1rem solid #bbbbbb;
+
+  &:not(:last-child) {
+    border-bottom: .1rem solid #bbbbbb;
+  }
 
   @media screen and (max-width: 768px) {
     padding: 1.4rem 0;
     flex-direction: column;
+  }
+
+  @media print {
+    &_page-end {
+      page-break-after: always;
+      border-bottom: 0 !important;
+    }
   }
 
   &__title {
@@ -80,6 +110,10 @@
       margin-bottom: .8rem;
       text-align: center;
     }
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 2rem;
   }
 
   &__definition strong {
@@ -100,7 +134,14 @@
   &__description {
     font-size: 1rem;
     line-height: 1.5;
+  }
+
+  &__description_size_small {
     margin-bottom: 2rem;
+
+    @media print {
+      margin-bottom: 1rem;
+    }
   }
 
   &__project-link {
@@ -114,4 +155,8 @@
   &__project-link {
     text-decoration: none;
   }
+}
+
+@media print {
+  @page { size: auto;  margin: 0; }
 }
