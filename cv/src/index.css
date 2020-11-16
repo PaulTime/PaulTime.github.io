@@ -149,6 +149,11 @@
     color: #08c;
   }
 
+  &__stack {
+    font-weight: 800;
+    font-size: 15px;
+  }
+
   &__project-link:active,
   &__project-link:hover,
   &__project-link:focus,
