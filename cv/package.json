@@ -5,6 +5,7 @@
   "scripts": {
     "build:html": "gulp html",
     "build:css": "gulp css",
+    "build": "gulp html && gulp css",
     "dev": "gulp watch"
   },
   "author": "Paul Timofieiev",
